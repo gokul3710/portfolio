@@ -189,6 +189,18 @@ body {
 
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
 
+.socials{
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  padding: var(--padding, 10px 10px);
+  border-radius: 50px;
+  transition: var(--transition-2);
+}
+
+.socials:is(:hover, :focus) { color: var(--space-cadet);transform: translateY(-0.5rem); }
+
+
 .img-cover {
   width: 100%;
   height: 100%;
@@ -489,7 +501,7 @@ body {
 \*-----------------------------------*/
 
 .contact-card {
-  background-color: var(--midnight-blue);
+  background-color: hsl(243, 23%, 28%);
   padding: 50px 25px;
   border-radius: var(--radius-20);
 }
@@ -734,11 +746,11 @@ textarea.contact-input {
    */
 
   .portfolio-card {
-    background-size: 115%;
+    background-size: 100%;
     padding-inline: 80px;
   }
 
-  .portfolio-card:is(:hover, :focus) { background-size: 130%; }
+  .portfolio-card:is(:hover, :focus) { background-size: 115%; }
 
 
 
