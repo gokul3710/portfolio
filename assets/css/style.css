@@ -329,8 +329,6 @@ body {
 }
 
 .hero-banner {
-  width: 150px;
-  height: 172px;
   background-color: var(--independence);
   border-radius: var(--radius-10);
   margin-inline: auto;
@@ -382,6 +380,7 @@ body {
 .about { padding-block-start: 120px; }
 
 .about-banner {
+  /* content: url(../images/hero2.jpg); */
   background-color: var(--independence);
   border-radius: var(--radius-10);
   margin-block-end: 30px;
