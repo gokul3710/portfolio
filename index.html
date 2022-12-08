@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gokul Krishna</title>
+  
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -22,6 +23,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
@@ -102,12 +104,6 @@
 
             <img src="./assets/images/hero.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
               class="img-cover">
-<!-- 
-            <div class="elem elem-1">
-              <p class="elem-title">12</p>
-
-              <p class="elem-text">Years of Success</p>
-            </div> -->
 
             <div class="elem elem-2">
               <p class="elem-title">15+</p>
@@ -418,7 +414,8 @@
 
             <div class="wrapper">
 
-              <form action="" class="contact-form">
+              <form action="" 
+              class="contact-form" method="post" id="submit-form">
 
                 <input type="text" name="name" placeholder="Name" required class="contact-input">
 
@@ -510,17 +507,11 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/photo5.jpg" width="1181" height="843" loading="lazy"
+                  <a >
+                    <img src="./assets/images/photo5.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
-<!-- 
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3> -->
 
               </div>
             </li>
@@ -529,17 +520,12 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/photo1.jpg" width="1181" height="843" loading="lazy"
+                  <a >
+                    <img src="./assets/images/photo1.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
-<!-- 
-                <a href="#" class="card-tag">Web Development</a>
 
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3> -->
 
               </div>
             </li>
@@ -548,17 +534,11 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/photo2.jpg" width="1181" height="843" loading="lazy"
+                  <a >
+                    <img src="./assets/images/photo2.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
-<!-- 
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3> -->
 
               </div>
             </li>
@@ -567,17 +547,11 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/photo3.jpg" width="1181" height="843" loading="lazy"
+                  <a >
+                    <img src="./assets/images/photo3.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
-<!-- 
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3> -->
 
               </div>
             </li>
@@ -586,17 +560,11 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/photo4.jpg" width="1181" height="843" loading="lazy"
+                  <a >
+                    <img src="./assets/images/photo4.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
-<!-- 
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3> -->
 
               </div>
             </li>
@@ -661,6 +629,25 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxk76FbEuWEutWUY-iRof02IEstMK2-22z3PMirIZd_3Co-tC1wwzAYl8MZoLbeQZCw/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 
 </body>
 
