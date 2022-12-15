@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gokul Krishna</title>
-  
+
 
   <!-- 
     - favicon
@@ -28,7 +28,7 @@
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/e1811e7568.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e1811e7568.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="top">
@@ -132,9 +132,12 @@
             </p>
 
             <div class="btn-group">
-              <a class="socials" target="_blank" href="https://www.instagram.com/g.k.1.6/"><i class="fa-brands fa-instagram fa-2x"></i></a>
-              <a class="socials" target="_blank" href="https://github.com/gokul3710"><i class="fa-brands fa-github fa-2x"></i></a>
-              <a class="socials" target="_blank" href="https://linkedin/u/gokulkrishnavm"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+              <a class="socials" target="_blank" href="https://www.instagram.com/g.k.1.6/"><i
+                  class="fa-brands fa-instagram fa-2x"></i></a>
+              <a class="socials" target="_blank" href="https://github.com/gokul3710"><i
+                  class="fa-brands fa-github fa-2x"></i></a>
+              <a class="socials" target="_blank" href="https://linkedin/u/gokulkrishnavm"><i
+                  class="fa-brands fa-linkedin fa-2x"></i></a>
             </div>
 
           </div>
@@ -182,8 +185,10 @@
             <h2 class="h2 section-title">I Develop Application that Help People</h2>
 
             <p class="section-text">
-Hi I'm n aspiring MEAN stack developer who loves programming and problems solving. After completing secondary education I pursued graduation in Mathematics , which helped me improve my problem solving skills.
-         
+              Hi I'm n aspiring MEAN stack developer who loves programming and problems solving. After completing
+              secondary education I pursued graduation in Mathematics , which helped me improve my problem solving
+              skills.
+
             </p>
 
             <p class="section-text">
@@ -219,7 +224,8 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
           <ul class="portfolio-list">
 
             <li>
-              <a target="_blank" href="https://gokul3710.github.io/Dr-Granny/" class="portfolio-card" style="background-image: url('./assets/images/drgranny.png')">
+              <a target="_blank" href="https://gokul3710.github.io/Dr-Granny/" class="portfolio-card"
+                style="background-image: url('./assets/images/drgranny.png')">
                 <div class="card-content">
 
                   <p class="card-subtitle">Dr Granny</p>
@@ -237,7 +243,8 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
             </li>
 
             <li>
-              <a target="_blank" href="https://brototype-website.netlify.app/" class="portfolio-card" style="background-image: url('./assets/images/brototype.png')">
+              <a target="_blank" href="https://brototype-website.netlify.app/" class="portfolio-card"
+                style="background-image: url('./assets/images/brototype.png')">
                 <div class="card-content">
 
                   <p class="card-subtitle">Brototype</p>
@@ -255,7 +262,8 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
             </li>
 
             <li>
-              <a target="_blank" href="https://gokul3710.github.io/yfone-static/" class="portfolio-card" style="background-image: url('./assets/images/yfone.png')">
+              <a target="_blank" href="https://gokul3710.github.io/yfone-static/" class="portfolio-card"
+                style="background-image: url('./assets/images/yfone.png')">
                 <div class="card-content">
 
                   <p class="card-subtitle">Yfone</p>
@@ -273,7 +281,8 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
             </li>
 
             <li>
-              <a target="_blank" href="https://gokul3710.github.io/Starbucks/" class="portfolio-card" style="background-image: url('./assets/images/starbucks.png')">
+              <a target="_blank" href="https://gokul3710.github.io/Starbucks/" class="portfolio-card"
+                style="background-image: url('./assets/images/starbucks.png')">
                 <div class="card-content">
 
                   <p class="card-subtitle">Starbucks</p>
@@ -412,16 +421,17 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
 
             <div class="wrapper">
 
-              <form action="" 
-              class="contact-form" method="post" id="submit-form">
+              <form action="" class="contact-form" method="post" id="submit-form">
 
-                <input type="text" name="name" placeholder="Name" required class="contact-input">
+                <input type="text" id="name" name="name" placeholder="Name" class="contact-input">
 
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
+                <input type="email" id="email" name="email" placeholder="Email"
+                  class="contact-input">
 
-                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+                <textarea onblur="validate()" name="message" id="message" placeholder="Message"
+                  class="contact-input"></textarea>
 
-                <button type="submit" class="btn-submit">Submit Message</button>
+                <button type="submit" id="submit" onclick="validate()" class="btn-submit">Submit Message</button>
 
               </form>
 
@@ -452,7 +462,8 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
                   <div>
                     <h3 class="contact-item-title">Email</h3>
 
-                    <a target="_blank" href="mailto:gokulappooz@gmail.com" class="contact-item-link">gokulappooz@gmail.com</a>
+                    <a target="_blank" href="mailto:gokulappooz@gmail.com"
+                      class="contact-item-link">gokulappooz@gmail.com</a>
                   </div>
 
                 </li>
@@ -505,7 +516,7 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a >
+                  <a>
                     <img src="./assets/images/photo5.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
@@ -518,7 +529,7 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a >
+                  <a>
                     <img src="./assets/images/photo1.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
@@ -532,7 +543,7 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a >
+                  <a>
                     <img src="./assets/images/photo2.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
@@ -545,7 +556,7 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a >
+                  <a>
                     <img src="./assets/images/photo3.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
@@ -558,7 +569,7 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a >
+                  <a>
                     <img src="./assets/images/photo4.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
@@ -587,7 +598,7 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
     <div class="container">
 
       <p class="copyright">
-        &copy; 2022 <a target="_blank"  href="#" class="copyright-link">codewithsadee</a>. All Rights Reseverd
+        &copy; 2022 <a target="_blank" href="#" class="copyright-link">codewithsadee</a>. All Rights Reseverd
       </p>
 
       <ul class="footer-list">
@@ -627,25 +638,30 @@ Hi I'm n aspiring MEAN stack developer who loves programming and problems solvin
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbxk76FbEuWEutWUY-iRof02IEstMK2-22z3PMirIZd_3Co-tC1wwzAYl8MZoLbeQZCw/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("Something Error")
 
-            }
-        })
+  <script>
+
+
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbxk76FbEuWEutWUY-iRof02IEstMK2-22z3PMirIZd_3Co-tC1wwzAYl8MZoLbeQZCw/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+          //window.location.href="https://google.com"
+        },
+        error: function (err) {
+          alert("Something Error")
+          console.log(err);
+
+        }
+      })
     })
-</script>
+
+  </script>
 
 </body>
 

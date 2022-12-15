@@ -46,3 +46,32 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+
+/**
+ * validation
+ */
+function validate(){
+
+
+
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var message = document.getElementById("message").value.trim();
+  // var submitButton = 
+
+  if(email === "" || name === "" || message === ""){
+    document.getElementById("submit").disabled = true
+    document.getElementById("submit").style.backgroundColor = "gray";
+    alert("Entry fields cannot be empty")
+  }else{
+    document.getElementById("submit").disabled = false
+    document.getElementById("submit").style.backgroundColor = "var(--orange-soda)";
+  }
+}
+
+// validate();
+
+
+
